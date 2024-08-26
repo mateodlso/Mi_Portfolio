@@ -1,0 +1,304 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333;
+  }
+
+  /* Estilos para el titulo*/
+
+  title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Estilos para el header */
+  
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para el contenedor principal */
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para las secciones */
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la sección de experiencia */
+  
+  .experience {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background: linear-gradient(to bottom, #f0f0f0, #fff);
+  }
+  
+  .experience p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la sección de habilidades */
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .skills li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .skills li:hover {
+    background-color: #eee;
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para la sección de proyectos */
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #eee;
+  }
+  
+  .projects li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .projects li:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Estilos para la sección de contacto */
+  
+  .contact {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los enlaces */
+  
+  a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  a:hover {
+    color: #23527c;
+  }
+  
+  /* Estilos para los íconos */
+  
+  i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para los medios de comunicación */
+  
+  .icono {
+    width: 20px; /* Tamaño de la imagen */
+    height: 20px; /* Tamaño de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: midd; /* Alinear la imagen con el texto */
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .container {
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .skills, .projects {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+  }
+  
+
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-links li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+  }
+  
+  .social-links li:hover {
+    background-color: #fff;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .social-links a:hover {
+    color: #23527c;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+  canvas{ display: block; -align: bottom; } 
+  
+  /* ---- particles.js container ---- */ 
+  #particles-js{ position:absolute; 
+    width: 100%; 
+    z-index: -1; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    background-color: #151313; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+  } 
+  
+  /* ---- stats.js ---- */ 
+  .count-particles{ background: #000022; position: absolute; top: 48px; 
+    left: 0; width: 80px; color: #13E8E9; 
+    font-size: .8em; text-align: left; text-indent: 4px; 
+    line-height: 14px; padding-bottom: 2px; 
+    font-family: Helvetica, Arial, sans-serif; font-weight: bold; } 
+    .js-count-particles{ font-size: 1.1em; } 
+  
+    .contenedor1 {
+      padding: 30px;
+      background-color: #fcfcfc;
+    }
+    .brand-seccion {
+      font-size: 23px;
+    }
+    .navegacion{
+      display: flex;
+      flex-direction: row;
+    }
+    .menu-seccion {
+      margin-left: auto;
+      display: flex;
+    }
+    .menu-seccion ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+    }
+    .menu-seccion ul li {
+      padding: 5px;
+      margin-right: 25px;
+    }
+    .menu-seccion ul li a{
+      color: #000;
+    }
+    .contenedor2 {
+      width: 100%;
+      height: 590px;
+      position: relative;
+    }

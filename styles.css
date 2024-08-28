@@ -1,29 +1,3 @@
-/* Estilos generales */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "poppins", sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    color: #333;
-  }
-
-  /* Estilos para el titulo*/
-
-  title {
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Estilos para el header */
-  
   #header {
     background-color: #333;
     color: #fff;
@@ -36,41 +10,30 @@
     margin-bottom: 10px;
   }
   
-  /* Estilos para el contenedor principal */
-  
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para las secciones */
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  section h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
   
   /* Estilos para la sección de experiencia */
   
-  .experience {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-    background: linear-gradient(to bottom, #f0f0f0, #fff);
+  .expirience {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack title and text vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    width: 100%; /* Responsive width */
+    height: 100vh; /* Full viewport height */
   }
   
-  .experience p {
-    font-size: 16px;
-    margin-bottom: 20px;
+  .title_exp {
+    font-size: 40px;
+    margin-bottom: 20px; /* Add some spacing between title and text */
+    color: #337ab7;
   }
+  
+  .text_exp {
+    font-size: 1.2em;
+    text-align: center; /* Center text within the container */
+    color: #fff;
+  }
+
   
   /* Estilos para la sección de habilidades */
   
@@ -101,7 +64,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #eee;
   }
   
   .projects li {
@@ -181,9 +143,7 @@
       flex-direction: column; /* Stack items vertically on smaller screens */
     }
   }
-  
-
-  
+ 
   
   h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
@@ -232,21 +192,8 @@
     color: #23527c;
   }
   
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
   body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
-  canvas{ display: block; -align: bottom; } 
-  
+
   /* ---- particles.js container ---- */ 
   #particles-js{ position:absolute; 
     width: 100%; 
@@ -261,20 +208,13 @@
     background-position: 50% 50%; 
   } 
   
-  /* ---- stats.js ---- */ 
-  .count-particles{ background: #000022; position: absolute; top: 48px; 
-    left: 0; width: 80px; color: #13E8E9; 
-    font-size: .8em; text-align: left; text-indent: 4px; 
-    line-height: 14px; padding-bottom: 2px; 
-    font-family: Helvetica, Arial, sans-serif; font-weight: bold; } 
-    .js-count-particles{ font-size: 1.1em; } 
-  
+  /*header*/
     .contenedor1 {
       padding: 30px;
       background-color: #fcfcfc;
     }
     .brand-seccion {
-      font-size: 23px;
+      font-size: 70px;
     }
     .navegacion{
       display: flex;
@@ -297,8 +237,4 @@
     .menu-seccion ul li a{
       color: #000;
     }
-    .contenedor2 {
-      width: 100%;
-      height: 590px;
-      position: relative;
-    }
+   

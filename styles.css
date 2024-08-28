@@ -39,46 +39,72 @@
   
   .skills {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
-  }
-  
-  .skills li {
+.skills li {
+    list-style: none;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f7f7f7;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-  
-  .skills li:hover {
-    background-color: #eee;
-    transform: scale(1.05);
-  }
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.skills li:hover {
+    background-color: #1a66a0;
+}
   
   /* Estilos para la sección de proyectos */
   
   .projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .projects li {
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects li {
+    list-style: none;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f7f7f7;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-  
-  .projects li:hover {
+    border: 1px solid #ff0000;
+    border-radius: 5px;
     background-color: #fff;
-    transform: scale(1.05);
-  }
+    transition: background-color 0.2s ease;
+}
+
+.projects li:hover {
+    background-color: #1a66a0;
+}
+
+  /*Estilos para la seccion de certificados*/
+
+  .certificados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificados li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.certificados li:hover {
+    background-color: #1a66a0;
+}
+
+/*titulo habilidades*/
+.titulos_hab {
+  color: #00aaff;
+}
   
   /* Estilos para la sección de contacto */
   
@@ -238,3 +264,45 @@
       color: #000;
     }
    
+    .contacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    
+    .contacto h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contacto p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contacto a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .contacto a:hover {
+      text-decoration: underline;
+    }
+    
+    .contacto .redes-sociales {
+      display: flex;
+      margin-top: 2rem;
+    }
+    
+    .contacto .redes-sociales a {
+      margin: 0 1rem;
+    }
+    
+    .contacto .redes-sociales img {
+      width: 30px;
+      height: 30px;
+    }

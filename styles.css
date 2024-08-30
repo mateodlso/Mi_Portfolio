@@ -1,324 +1,336 @@
-  #header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  #header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  
-  /* Estilos para la sección de experiencia */
-  
-  .expirience {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack title and text vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    width: 100%; /* Responsive width */
-    height: 100vh; /* Full viewport height */
-  }
-  
-  .title_exp {
-    font-size: 40px;
-    margin-bottom: 20px; /* Add some spacing between title and text */
-    color: #337ab7;
-  }
-  
-  .text_exp {
-    font-size: 1.2em;
-    text-align: center; /* Center text within the container */
-    color: #fff;
+@media (max-width: 768px) {
+  .expirience, .skills, .projects, .certificados {
+      flex-direction: column;
+      align-items: center;
   }
 
-  
-  /* Estilos para la sección de habilidades */
-  
-  .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .skills li, .projects li, .certificados li {
+      width: 100%;
+      margin: 5px 0;
+  }
 }
 
-.skills li {
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
-    background-color: #ffffff;
-    transition: background-color 0.2s ease;
+.skills, .projects, .certificados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.skills li:hover {
-    background-color: #1a66a0;
-}
-  
-  /* Estilos para la sección de proyectos */
-  
-  .projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.skills li, .projects li, .certificados li {
+  flex: 1 1 200px; /* Ajusta el tamaño mínimo */
+  margin: 10px;
 }
 
-.projects li {
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: background-color 0.2s ease;
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
-.projects li:hover {
-    background-color: #1a66a0;
+body {
+  font-size: 1rem;
 }
 
-  /*Estilos para la seccion de certificados*/
-
-  .certificados {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1 {
+  font-size: 2.25rem;
 }
 
-.certificados li {
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ff0000;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: background-color 0.2s ease;
+h2 {
+  font-size: 1.5rem;
 }
 
-.certificados li:hover {
-    background-color: #1a66a0;
+h3 {
+  font-size: 1.25rem;
 }
 
-/*titulo habilidades*/
+/* Estilos generales */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #151313;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Header */
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#header h1 {
+  font-size: 24px;
+  margin: 0;
+  float: left;
+}
+
+/* Sección de experiencia */
+.expirience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.title_exp {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #337ab7;
+}
+
+.text_exp {
+  font-size: 1.2em;
+  text-align: center;
+  color: #fff;
+}
+
+/* Sección de habilidades */
+.skills, .projects, .certificados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills li, .projects li, .certificados li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease;
+  flex: 1 1 200px; /* Ajusta el tamaño mínimo */
+}
+
+.skills li:hover, .projects li:hover, .certificados li:hover {
+  background-color: #1a66a0;
+}
+
+/* Título habilidades */
 .titulos_hab {
   color: #00aaff;
 }
-  
-  /* Estilos para la sección de contacto */
-  
-  .contact {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .contact p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para los enlaces */
-  
-  a {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  a:hover {
-    color: #23527c;
-  }
-  
-  /* Estilos para los íconos */
-  
-  i {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  /* Estilos para los medios de comunicación */
-  
-  .icono {
-    width: 40px; /* Tamaño de la imagen */
-    height: 40px; /* Tamaño de la imagen */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-    vertical-align: middle; /* Alinear la imagen con el texto */
-  }
 
-  @media (max-width: 768px) {
-    .container {
-      max-width: 600px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .container {
-      max-width: 400px;
-    }
-  }
-  
-  @media (max-width: 320px) {
-    .container {
-      max-width: 300px;
-    }
-  }
+/* Sección de contacto */
+.contact {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
 
-  @media (max-width: 768px) {
-    .skills, .projects {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-  }
- 
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  h1 {
-    font-size: 36px;
-    font-weight: 600;
-  }
-  
-  h2 {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  
-  h3 {
-    font-size: 18px;
-    font-weight: 400;
-  }
+.contact p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-  .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .social-links li {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f7f7f7;
-  }
-  
-  .social-links li:hover {
-    background-color: #fff;
-  }
-  
-  .social-links a {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .social-links a:hover {
-    color: #23527c;
-  }
-  
-  body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
 
-  /* ---- particles.js container ---- */ 
-  #particles-js{ position:absolute; 
-    width: 100%; 
-    z-index: -1; 
-    height: 100%; 
-    position: fixed; 
-    top: 0; 
-    background-color: #151313; 
-    background-image: url(""); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: 50% 50%; 
-  } 
-  
-  /*header*/
-    .contenedor1 {
-      padding: 30px;
-      background-color: #fcfcfc;
-    }
-    .brand-seccion {
-      font-size: 70px;
-    }
-    .navegacion{
-      display: flex;
-      flex-direction: row;
-    }
-    .menu-seccion {
-      margin-left: auto;
-      display: flex;
-    }
-    .menu-seccion ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      align-items: center;
-    }
-    .menu-seccion ul li {
-      padding: 5px;
-      margin-right: 25px;
-    }
-    .menu-seccion ul li a{
-      color: #000;
-    }
-   
-    .contacto {
-      display: flex;
+a:hover {
+  color: #23527c;
+}
+
+/* Íconos */
+i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Medios de comunicación */
+.icono {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Enlaces sociales */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.social-links li:hover {
+  background-color: #fff;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.social-links a:hover {
+  color: #23527c;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .expirience, .skills, .projects, .certificados {
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      color: #fff;
-      font-family: sans-serif;
-    }
-    
-    .contacto h1 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
-    
-    .contacto p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .contacto a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    .contacto a:hover {
-      text-decoration: underline;
-    }
-    
-    .contacto .redes-sociales {
-      display: flex;
-      margin-top: 2rem;
-    }
-    
-    .contacto .redes-sociales a {
-      margin: 0 1rem;
-    }
-    
-    .contacto .redes-sociales img {
-      width: 30px;
-      height: 30px;
-    }
+  }
 
-    .image-container {
-      position: relative;
-      top: 10px;
-      right: 10px;
-      overflow: hidden;
-      width: 150px; /* Ajusta el tamaño según tus necesidades */
-      height: 150px; /* Ajusta el tamaño según tus necesidades */
-  }
-  
-  .image-container img {
+  .skills li, .projects li, .certificados li {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      margin: 5px 0;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .container, .contenedor1 {
+      max-width: 600px;
+  }
+  .skills, .projects, .contenedor1 {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container, .contenedor1 {
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container, .contenedor1 {
+      max-width: 300px;
+  }
+}
+
+.navegacion {
+  padding-left: 5%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+.menu-seccion ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+.menu-seccion ul li {
+  margin-left: 25px;
+}
+
+.menu-seccion ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-seccion ul li a:hover {
+  color: #337ab7;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 20px; /* Añade padding para evitar que el contenido toque los bordes */
+}
+
+.contacto h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contacto p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.contacto a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacto a:hover {
+  text-decoration: underline;
+}
+
+.contacto .redes-sociales {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+}
+
+.contacto .redes-sociales a {
+  margin: 0 1rem;
+}
+
+.contacto .redes-sociales img {
+  width: 30px;
+  height: 30px;
+}
+
+.image-container {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  overflow: hidden;
+  width: 25%; /* Ajusta el tamaño según tus necesidades */
+  height: 25%; /* Ajusta el tamaño según tus necesidades */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

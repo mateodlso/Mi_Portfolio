@@ -1,7 +1,41 @@
+
+  #header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  #header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Estilos para la sección de experiencia */
+  
+  .expirience {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack title and text vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    width: 100%; /* Responsive width */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .title_exp {
+    font-size: 40px;
+    margin-bottom: 20px; /* Add some spacing between title and text */
+    color: #337ab7;
+=======
 @media (max-width: 768px) {
   .expirience, .skills, .projects, .certificados {
       flex-direction: column;
       align-items: center;
+
   }
 
   .skills li, .projects li, .certificados li {
@@ -254,6 +288,179 @@ h3 {
   flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
 }
 
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-links li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+  }
+  
+  .social-links li:hover {
+    background-color: #fff;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .social-links a:hover {
+    color: #23527c;
+  }
+  
+  body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+
+  /* ---- particles.js container ---- */ 
+  #particles-js{ position:absolute; 
+    width: 100%; 
+    z-index: -1; 
+    height: 100%; 
+    position: fixed; 
+    top: 0; 
+    background-color: #151313; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+  } 
+  
+  /*header*/
+    .contenedor1 {
+      padding: 30px;
+      background-color: #fcfcfc;
+    }
+    .brand-seccion {
+      font-size: 70px;
+    }
+    .navegacion{
+      display: flex;
+      flex-direction: row;
+    }
+    .menu-seccion {
+      margin-left: auto;
+      display: flex;
+    }
+    .menu-seccion ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+    }
+    .menu-seccion ul li {
+      padding: 5px;
+      margin-right: 25px;
+    }
+    .menu-seccion ul li a{
+      color: #000;
+    }
+   
+    .contacto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+      font-family: sans-serif;
+    }
+    
+    .contacto h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contacto p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .contacto a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .contacto a:hover {
+      text-decoration: underline;
+    }
+    
+    .contacto .redes-sociales {
+      display: flex;
+      margin-top: 2rem;
+    }
+    
+    .contacto .redes-sociales a {
+      margin: 0 1rem;
+    }
+    
+    .contacto .redes-sociales img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      width: 40%; /* Ajusta el tamaño según tus necesidades */
+      height: 40%; /* Ajusta el tamaño según tus necesidades */
+  }
+  
+  .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .container3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+  .cv {
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el enlace */
+    max-width: 100%;
+    height: auto;
+  }
+
+.cv-link {
+    text-decoration: none;
+    color: #ffffff; /* Cambia el color del texto según tu diseño */
+    background-color: #007bff; /* Cambia el color de fondo según tu diseño */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cv-link:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column; /* Cambia la dirección de los elementos a columna */
+      align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .cv {
+      margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+      margin-bottom: 10px; /* Agrega un margen inferior para separar los elementos */
+  }
+
+  .cv-link {
+      width: 100%; /* Hace que el enlace ocupe todo el ancho del contenedor */
+      text-align: center; /* Centra el texto del enlace */
+  }
+}
+  
+=======
 .menu-seccion ul {
   display: flex;
   flex-direction: row;
@@ -334,3 +541,4 @@ h3 {
   height: 100%;
   object-fit: cover;
 }
+

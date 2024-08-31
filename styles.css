@@ -17,6 +17,7 @@
   /* Estilos para la sección de experiencia */
   
   .expirience {
+    margin-top: -10%;
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack title and text vertically */
     align-items: center; /* Center horizontally */
@@ -322,46 +323,47 @@
       height: 100%;
       object-fit: cover;
   }
-
+  
   .container3 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
+    margin-top: 7.5%;
+      display: flex;
+      flex-direction: column; /* Apila los elementos verticalmente */
+      align-items: center; /* Alinea los elementos al inicio del contenedor */
+  }
+  
   .cv {
-    margin-right: 10px; /* Ajusta el espacio entre la imagen y el enlace */
-    max-width: 100%;
-    height: auto;
+      max-width: 100%;
+      height: auto;
+      font-size: 30px;
   }
-
-.cv-link {
-    text-decoration: none;
-    color: #ffffff; /* Cambia el color del texto según tu diseño */
-    background-color: #007bff; /* Cambia el color de fondo según tu diseño */
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.cv-link:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el ratón */
-}
-
-@media (max-width: 600px) {
-  .container {
-      flex-direction: column; /* Cambia la dirección de los elementos a columna */
-      align-items: flex-start; /* Alinea los elementos al inicio */
-  }
-
-  .cv {
-      margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
-      margin-bottom: 10px; /* Agrega un margen inferior para separar los elementos */
-  }
-
+  
   .cv-link {
-      width: 100%; /* Hace que el enlace ocupe todo el ancho del contenedor */
-      text-align: center; /* Centra el texto del enlace */
+      text-decoration: none;
+      color: #ffffff; /* Cambia el color del texto según tu diseño */
+      background-color: #007bff; /* Cambia el color de fondo según tu diseño */
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
   }
-}
+  
+  .cv-link:hover {
+      background-color: #a4acb4; /* Color de fondo al pasar el ratón */
+  }
+  
+  @media (max-width: 600px) {
+      .container {
+          flex-direction: column; /* Cambia la dirección de los elementos a columna */
+          align-items: flex-start; /* Alinea los elementos al inicio */
+      }
+  
+      .cv {
+          margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+          margin-bottom: 10px; /* Agrega un margen inferior para separar los elementos */
+      }
+  
+      .cv-link {
+          width: 100%; /* Hace que el enlace ocupe todo el ancho del contenedor */
+          text-align: center; /* Centra el texto del enlace */
+      }
+  }
   

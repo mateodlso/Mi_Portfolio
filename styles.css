@@ -31,29 +31,22 @@
     font-size: 40px;
     margin-bottom: 20px; /* Add some spacing between title and text */
     color: #337ab7;
-=======
-@media (max-width: 768px) {
-  .expirience, .skills, .projects, .certificados {
-      flex-direction: column;
-      align-items: center;
-
   }
 
-  .skills li, .projects li, .certificados li {
-      width: 100%;
-      margin: 5px 0;
-  }
+  .skills, .projects, .certificados {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos internos estén en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin: 10px;
 }
 
-.skills, .projects, .certificados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.skills ul, .projects ul, .certificados ul {
+    list-style: none;
+    padding: 0;
 }
 
 .skills li, .projects li, .certificados li {
-  flex: 1 1 200px; /* Ajusta el tamaño mínimo */
-  margin: 10px;
+    margin: 10px 0; /* Ajusta el margen entre los elementos de la lista */
 }
 
 img, video {
@@ -247,11 +240,14 @@ h3 {
 }
 
 /* Media Queries */
+
 @media (max-width: 768px) {
   .expirience, .skills, .projects, .certificados {
+      margin-right: 15%;      
       flex-direction: column;
-      align-items: center;
+      align-items: center;   
   }
+  
 
   .skills li, .projects li, .certificados li {
       width: 100%;
@@ -264,7 +260,7 @@ h3 {
       max-width: 600px;
   }
   .skills, .projects, .contenedor1 {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+      flex-direction: row; /* Stack items vertically on smaller screens */
   }
 }
 
@@ -344,24 +340,40 @@ h3 {
     .navegacion{
       display: flex;
       flex-direction: row;
+      width: 100%;
     }
     .menu-seccion {
-      margin-left: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
       display: flex;
-    }
-    .menu-seccion ul {
+      justify-content: flex-end;
+      padding: 10px;
+      background-color: #fff; /* Opcional: para que el menú tenga un fondo */
+  }
+  
+  .menu-seccion ul {
       display: flex;
       flex-direction: row;
       list-style: none;
       align-items: center;
-    }
-    .menu-seccion ul li {
-      padding: 5px;
-      margin-right: 25px;
-    }
-    .menu-seccion ul li a{
+      padding: 0;
+      margin: 0;
+  }
+  
+  .menu-seccion ul li {
+      margin: 0 10px;
+      margin-top: 20%;
+  }
+  
+  .menu-seccion ul li a {
       color: #000;
-    }
+      text-decoration: none;
+  }
+  
+  .menu-seccion ul li a:hover {
+      color: #337ab7;
+  }
    
     .contacto {
       display: flex;
@@ -461,27 +473,6 @@ h3 {
           text-align: center; /* Centra el texto del enlace */
       }
   }
-
-.menu-seccion ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  align-items: center;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
-}
-
-.menu-seccion ul li {
-  margin-left: 25px;
-}
-
-.menu-seccion ul li a {
-  color: #000;
-  text-decoration: none;
-}
-
-.menu-seccion ul li a:hover {
-  color: #337ab7;
-}
 
 .contacto {
   display: flex;

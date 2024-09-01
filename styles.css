@@ -20,16 +20,16 @@
   .expirience {
     margin-top: -10%;
     display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack title and text vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    width: 100%; /* Responsive width */
-    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack titulo y texto vertical */
+    align-items: center; /* Centrar horizontalemnte */
+    justify-content: center; /* Center verticalmente */
+    width: 100%; /* widht responsivo */
+    height: 100vh; /* anchura completo */
   }
   
   .title_exp {
     font-size: 40px;
-    margin-bottom: 20px; /* Add some spacing between title and text */
+    margin-bottom: 20px; /* espacio textos*/
     color: #337ab7;
   }
 
@@ -247,7 +247,11 @@ h3 {
       flex-direction: column;
       align-items: center;   
   }
-  
+
+  .brand-seccion {
+    font-size: 1.5em;
+    white-space: inherit;
+  }
 
   .skills li, .projects li, .certificados li {
       width: 100%;
@@ -260,7 +264,7 @@ h3 {
       max-width: 600px;
   }
   .skills, .projects, .contenedor1 {
-      flex-direction: row; /* Stack items vertically on smaller screens */
+      flex-direction: row; /* Stack items vertical en pantallas chicas */
   }
 }
 
@@ -417,26 +421,19 @@ h3 {
       width: 30px;
       height: 30px;
     }
-
-    .image-container {
-      position: relative;
-      overflow: hidden;
-      width: 40%; /* Ajusta el tamaño según tus necesidades */
-      height: 40%; /* Ajusta el tamaño según tus necesidades */
-  }
-  
-  .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
   
   .container3 {
-    margin-top: 7.5%;
+    margin-top: 3%;
       display: flex;
       flex-direction: column; /* Apila los elementos verticalmente */
       align-items: center; /* Alinea los elementos al inicio del contenedor */
   }
+
+  .yo6 {
+    margin-top: -5%;
+    width: 40%;
+    align-items: center;
+  } 
   
   .cv {
       max-width: 100%;
@@ -445,6 +442,7 @@ h3 {
   }
   
   .cv-link {
+      align-items: center;
       text-decoration: none;
       color: #ffffff; /* Cambia el color del texto según tu diseño */
       background-color: #007bff; /* Cambia el color de fondo según tu diseño */
@@ -519,19 +517,5 @@ h3 {
   height: 30px;
 }
 
-.image-container {
-  position: relative;
-  top: 10px;
-  right: 10px;
-  overflow: hidden;
-  width: 25%; /* Ajusta el tamaño según tus necesidades */
-  height: 25%; /* Ajusta el tamaño según tus necesidades */
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 

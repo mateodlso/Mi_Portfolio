@@ -517,5 +517,14 @@ h3 {
   height: 30px;
 }
 
+.display-4 {
+  color: #b8bbd5; /* Celeste */
+}
 
+p {
+  color: #ffffff; /* Blanco */
+}
 
+.form-label {
+  color: #ffffff; /* Blanco */
+}

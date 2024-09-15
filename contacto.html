@@ -4,51 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="contenedor1">
-          <nav class="navegacion">
-            <div class="brand-seccion">
-              <h2>MATEO DE LOS SANTOS</h2>
-            </div>
-            <div class="menu-seccion">
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="habilidades.html">Habilidades</a>
-                </li>
-                <li>
-                  <a href="contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+    <header class="mb-4">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">MATEO DE LOS SANTOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="contenedor2">
-          <div class="opacidad"></div>
-          <div class="imagen-div">
-            <div class="banner" id="main">
-      </header>
-    <div id="particles-js"></div> 
-    <!-- stats - count particles --> 
+    </header>
+
+    <div id="particles-js"></div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="display-4">Contacto</h2>
+                <p>Puedes contactarme a través de mi correo electrónico o redes sociales:</p>
+                <ul class="list-unstyled">
+                    <li><img class="icono" src="icon_mail.jpg" alt="Icono de correo" width="20"> <a href="mailto:mateodelossantoso@gmail.com">mateodelossantoso@gmail.com</a></li>
+                    <li><img class="icono" src="icon_linkedin.jpg" alt="Icono de LinkedIn" width="20"> <a href="https://www.linkedin.com/in/mateo-de-los-santos-0a8809184/">LinkedIn</a></li>
+                    <li><img class="icono" src="icon_github.jpg" alt="Icono de GitHub" width="20"> <a href="https://github.com/mateodlso">GitHub</a></li>
+                    <li><img class="icono" src="icon_instagram.jpg" alt="Icono de Instagram" width="20"> <a href="https://www.instagram.com/mateodlso_">Instagram</a></li>
+                    <li><img class="icono" src="icon_wpp.jpg" alt="Icono de WhatsApp" width="20"> <a href="https://wa.me/+59898669028?text=Hola!%20Quiero%20saber%20más%20sobre%20tu%20trabajo">WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-4">Envíame un mensaje</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
     </div>
 
-     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-     <script src="./script.js"></script>
-     <div class="contacto">
-     <p>Puedes contactarme a través de mi correo electrónico <img class="icono" src="icon_mail.jpg" alt="Imagen de gmail"><a href="mailto:mateodelossantoso@gmail.com">mateodelossantoso@gmail.com</a> o a través de mis redes sociales:</p>
-      <nav>
-    <ul>
-      <li><img class="icono" src="icon_linkedin.jpg" alt="Imagen de LinkedIn"><a href="https://www.linkedin.com/in/mateo-de-los-santos-0a8809184/">LinkedIn</a></li>
-      <li><img class="icono" src="icon_github.jpg" alt="Imagen de GitHub"><a href="https://github.com/mateodlso">GitHub</a></li>
-      <li><img class="icono" src="icon_instagram.jpg" alt="Imagen de Instagram"><a href="https://www.instagram.com/mateodlso_">Instagram</a></li>
-      <li><img class="icono" src="icon_wpp.jpg" alt="Imagen de mi WhatsApp"><a href="https://wa.me/+59898669028?text=Hola!%20Quiero%20saber%20más%20sobre%20tu%20trabajo">WhatsApp</a></li>
-    </ul>
-  </nav></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

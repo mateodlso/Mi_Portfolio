@@ -1,74 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habilidades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="contenedor1">
-          <nav class="navegacion">
-            <div class="brand-seccion">
-              <h2>MATEO DE LOS SANTOS</h2>
-            </div>
-            <div class="menu-seccion">
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="habilidades.html">Habilidades</a>
-                </li>
-                <li>
-                  <a href="contacto.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+    <header class="mb-4">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">MATEO DE LOS SANTOS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="habilidades.html">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="contenedor2">
-          <div class="opacidad"></div>
-          <div class="imagen-div">
-            <div class="banner" id="main">
-      </header>
+    </header>
+
     <div id="particles-js"></div> 
-    <!-- stats - count particles --> 
-    </div>
-     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-     <script src="./script.js"></script>
-    
-     <section class="skills">
-        <h2 class="titulos_hab">Habilidades</h2>
-        <ul>
-          <li>Desarrollo web frontend con HTML, CSS y JavaScript</li>
-          <li>Experiencia con frameworks como React y Angular</li>
-          <li>Diseño de páginas web responsivas y accesibles</li>
-        </ul>
-      </section>
-      <section class="projects">
-        <h2 class="titulos_hab">Proyectos</h2>
-        <ul>
-          <li><a href="https://mateodlso.github.io/mateodls-github.io/">Proyecto en proceso: e-commerce</a></li>
-          <li><a href="http://127.0.0.1:5500/Actividad_2_2Individual/index.html">Proyecto 2: Formulario de registro</a></li>
-          <li><a href="http://127.0.0.1:5500/Actividad_1Individual/entrega1.html">Proyecto 3: Probando alert</a></li>
-        </ul>
-        <section class="certificados">
-          <h2 class="titulos_hab">Certificados</h2>
-          <ul>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/LLAJKPQP5WTG">SQL para el desarrollo web</a></li>
-          <li><a href="https://www.freecodecamp.org/certification/mdlso/responsive-web-design">Diseño Web Responsivo</a></li>
-          <li><a href="https://www.freecodecamp.org/certification/mdlso/javascript-algorithms-and-data-structures">Algoritmos y estructuras de datos en JavaScript</a></li>
-          <li><a href="https://app.edutin.com/verify/8979269">Tester de Software</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/RZLC8Y85KUKA">Estructura de datos en Python</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/7WJBRREEHSC9">Programación para Todos (Introducción a Python)</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/VDPU5GZP2WGN">Introduccion a Java</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/RFHYLXB2MGJH">Introducción a la Programación en Python I</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/certificate/YCC4RQN6AWE2">A Programar! Una introducción a la programación</a></li>
-          </ul>
-        </section>
-      
+
+    <section class="container my-5 d-flex flex-column align-items-center">
+        <div class="row w-100">
+            <div class="col-12 col-md-8 text-center">
+                <h2 class="display-4 mb-4">Habilidades</h2>
+                <button class="btn btn-outline-primary mb-2">Desarrollo web frontend con HTML, CSS y JavaScript</button>
+                <button class="btn btn-outline-primary mb-2">Experiencia con frameworks como React y Angular</button>
+                <button class="btn btn-outline-primary mb-2">Diseño de páginas web responsivas y accesibles</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 d-flex flex-column align-items-center">
+        <div class="row w-100">
+            <div class="col-12 col-md-8 text-center">
+                <h2 class="display-4 mb-4">Proyectos</h2>
+                <button class="btn btn-outline-primary mb-2"><a href="https://mateodlso.github.io/mateodls-github.io/" target="_blank" class="text-decoration-none text-reset">Proyecto en proceso: e-commerce</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="http://127.0.0.1:5500/Actividad_2_2Individual/index.html" target="_blank" class="text-decoration-none text-reset">Proyecto 2: Formulario de registro</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="http://127.0.0.1:5500/Actividad_1Individual/entrega1.html" target="_blank" class="text-decoration-none text-reset">Proyecto 3: Probando alert</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 d-flex flex-column align-items-center">
+        <div class="row w-100">
+            <div class="col-12 col-md-8 text-center">
+                <h2 class="display-4 mb-4">Certificados</h2>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.coursera.org/account/accomplishments/certificate/LLAJKPQP5WTG" target="_blank" class="text-decoration-none text-reset">SQL para el desarrollo web</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.freecodecamp.org/certification/mdlso/responsive-web-design" target="_blank" class="text-decoration-none text-reset">Diseño Web Responsivo</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.freecodecamp.org/certification/mdlso/javascript-algorithms-and-data-structures" target="_blank" class="text-decoration-none text-reset">Algoritmos y estructuras de datos en JavaScript</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://app.edutin.com/verify/8979269" target="_blank" class="text-decoration-none text-reset">Tester de Software</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.coursera.org/account/accomplishments/certificate/RZLC8Y85KUKA" target="_blank" class="text-decoration-none text-reset">Estructura de datos en Python</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.coursera.org/account/accomplishments/certificate/7WJBRREEHSC9" target="_blank" class="text-decoration-none text-reset">Programación para Todos (Introducción a Python)</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.coursera.org/account/accomplishments/certificate/VDPU5GZP2WGN" target="_blank" class="text-decoration-none text-reset">Introducción a Java</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.coursera.org/account/accomplishments/certificate/RFHYLXB2MGJH" target="_blank" class="text-decoration-none text-reset">Introducción a la Programación en Python I</a></button>
+                <button class="btn btn-outline-primary mb-2"><a href="https://www.coursera.org/account/accomplishments/certificate/YCC4RQN6AWE2" target="_blank" class="text-decoration-none text-reset">A Programar! Una introducción a la programación</a></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

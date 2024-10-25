@@ -528,3 +528,25 @@ p {
 .form-label {
   color: #ffffff; /* Blanco */
 }
+
+footer {
+  padding: 10px 0; /* Espaciado superior e inferior */
+}
+.navbar-brand {
+  text-align: center; /* Centra el texto */
+}
+.nav-link {
+  color: #000; /* Cambia el color de los enlaces */
+}
+.nav-link:hover {
+  text-decoration: underline; /* Subraya los enlaces al pasar el mouse */
+}
+
+.icono {
+  margin-right: 10px; /* Espaciado a la derecha del icono */
+  color: #007bff; /* Cambia el color del icono (puedes usar cualquier color) */
+  font-size: 30px; /* Aumenta el tamaño del icono */
+}
+.icono:hover {
+  color: #0056b3; /* Cambia el color al pasar el mouse (puedes personalizar) */
+}

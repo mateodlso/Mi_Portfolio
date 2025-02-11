@@ -1,52 +1,19 @@
-
-  #header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-  }
-  
-  #header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  
-  /* Estilos para la sección de experiencia */
-  
-  .expirience {
-    margin-top: -10%;
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack titulo y texto vertical */
-    align-items: center; /* Centrar horizontalemnte */
-    justify-content: center; /* Center verticalmente */
-    width: 100%; /* widht responsivo */
-    height: 100vh; /* anchura completo */
-  }
-  
-  .title_exp {
-    font-size: 40px;
-    margin-bottom: 20px; /* espacio textos*/
-    color: #337ab7;
-  }
-
-  .skills, .projects, .certificados {
-    display: flex;
-    flex-direction: column; /* Asegura que los elementos internos estén en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    margin: 10px;
+/* Variables */
+:root {
+  --primary-color: #337ab7;
+  --secondary-color: #1a66a0;
+  --light-background: #ffffff;
+  --dark-background: #151313;
+  --footer-background: #f8f9fa;
+  --link-color: #337ab7;
+  --link-hover-color: #23527c;
 }
 
-.skills ul, .projects ul, .certificados ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li, .projects li, .certificados li {
-    margin: 10px 0; /* Ajusta el margen entre los elementos de la lista */
+/* Estilos generales */
+body, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 img, video {
@@ -54,59 +21,21 @@ img, video {
   height: auto;
 }
 
-body {
-  font-size: 1rem;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-/* Estilos generales */
-body {
-  margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-/* ---- particles.js container ---- */
-#particles-js {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  background-color: #151313;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
 /* Header */
-#header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  overflow: hidden;
+#header a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: normal;  /* Asegúrate de que no haya negrita */
 }
 
-#header h1 {
-  font-size: 24px;
-  margin: 0;
-  float: left;
+#header a:hover {
+  color: var(--link-hover-color);
+  font-weight: bold; /* Esto asegura que al pasar el ratón se haga en negrita */
 }
 
 /* Sección de experiencia */
 .expirience {
+  margin-top: -10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +47,7 @@ body {
 .title_exp {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #337ab7;
+  color: var(--primary-color);
 }
 
 .text_exp {
@@ -127,7 +56,7 @@ body {
   color: #fff;
 }
 
-/* Sección de habilidades */
+/* Sección de habilidades, proyectos y certificados */
 .skills, .projects, .certificados {
   display: flex;
   flex-wrap: wrap;
@@ -140,78 +69,62 @@ body {
   padding: 10px;
   border: 1px solid #ff0000;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: var(--light-background);
   transition: background-color 0.2s ease;
-  flex: 1 1 200px; /* Ajusta el tamaño mínimo */
+  flex: 1 1 200px;
 }
 
 .skills li:hover, .projects li:hover, .certificados li:hover {
-  background-color: #1a66a0;
+  background-color: var(--secondary-color);
 }
 
-/* Título habilidades */
-.titulos_hab {
-  color: #00aaff;
-}
-
-/* Sección de contacto */
-.contact {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.contact p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-/* Enlaces */
+/* Enlaces y botones */
 a {
   text-decoration: none;
-  color: #337ab7;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #23527c;
+  color: var(--link-hover-color);
 }
 
-/* Íconos */
-i {
-  font-size: 24px;
-  margin-right: 10px;
+.btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-/* Medios de comunicación */
-.icono {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  vertical-align: middle;
+.btn:hover {
+  background-color: #0056b3;
 }
 
-/* Títulos */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+/* Footer */
+footer {
+  background-color: var(--footer-background);
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .navbar {
+  padding: 0;
+}
+
+footer .nav-link {
   color: #333;
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: 600;
+footer .nav-link:hover {
+  color: var(--primary-color);
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 600;
+/* Íconos y redes sociales */
+.icono-grande {
+  width: 80px;
+  height: 80px;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 400;
-}
-
-/* Enlaces sociales */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -227,328 +140,121 @@ h3 {
 }
 
 .social-links li:hover {
-  background-color: #fff;
+  background-color: var(--light-background);
 }
 
 .social-links a {
   text-decoration: none;
-  color: #337ab7;
+  color: var(--link-color);
 }
 
 .social-links a:hover {
-  color: #23527c;
+  color: var(--link-hover-color);
+}
+
+/* Particles.js */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--dark-background);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Contenedor de contacto */
+.container, .contenedor1 {
+  background-color: rgba(64, 60, 60, 0.171);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2.display-4 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+/* Lista de contacto */
+ul.list-unstyled li {
+  margin-bottom: 10px;
+}
+
+ul.list-unstyled li a {
+  color: var(--link-color);
+  font-weight: 500;
+}
+
+ul.list-unstyled li a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.icono {
+  margin-right: 10px;
+  color: #0056b3;
+}
+
+/* Estilos del formulario */
+form .form-label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(51, 122, 183, 0.5);
+}
+
+button.btn {
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: var(--link-hover-color);
 }
 
 /* Media Queries */
-
 @media (max-width: 768px) {
   .expirience, .skills, .projects, .certificados {
-      margin-right: 15%;      
-      flex-direction: column;
-      align-items: center;   
-  }
-
-  .brand-seccion {
-    font-size: 1.5em;
-    white-space: inherit;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15%;
   }
 
   .skills li, .projects li, .certificados li {
-      width: 100%;
-      margin: 5px 0;
+    width: 100%;
+    margin: 5px 0;
   }
-}
 
-@media (max-width: 768px) {
   .container, .contenedor1 {
-      max-width: 600px;
-  }
-  .skills, .projects, .contenedor1 {
-      flex-direction: row; /* Stack items vertical en pantallas chicas */
+    max-width: 600px;
   }
 }
 
 @media (max-width: 480px) {
   .container, .contenedor1 {
-      max-width: 400px;
+    max-width: 400px;
   }
 }
 
 @media (max-width: 320px) {
   .container, .contenedor1 {
-      max-width: 300px;
+    max-width: 300px;
   }
 }
-
-.navegacion {
-  padding-left: 5%;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
-}
-
-
-  .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .social-links li {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f7f7f7;
-  }
-  
-  .social-links li:hover {
-    background-color: #fff;
-  }
-  
-  .social-links a {
-    text-decoration: none;
-    color: #337ab7;
-  }
-  
-  .social-links a:hover {
-    color: #23527c;
-  }
-  
-  body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
-
-  /* ---- particles.js container ---- */ 
-  #particles-js{ position:absolute; 
-    width: 100%; 
-    z-index: -1; 
-    height: 100%; 
-    position: fixed; 
-    top: 0; 
-    background-color: #151313; 
-    background-image: url(""); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: 50% 50%; 
-  } 
-  
-  /*header*/
-    .contenedor1 {
-      padding: 30px;
-      background-color: #fcfcfc;
-    }
-    .brand-seccion {
-      font-size: 70px;
-    }
-    .navegacion{
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-    }
-    .menu-seccion {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px;
-      background-color: #fff; /* Opcional: para que el menú tenga un fondo */
-  }
-  
-  .menu-seccion ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-  }
-  
-  .menu-seccion ul li {
-      margin: 0 10px;
-      margin-top: 20%;
-  }
-  
-  .menu-seccion ul li a {
-      color: #000;
-      text-decoration: none;
-  }
-  
-  .menu-seccion ul li a:hover {
-      color: #337ab7;
-  }
-   
-    .contacto {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      color: #fff;
-      font-family: sans-serif;
-    }
-    
-    .contacto h1 {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
-    
-    .contacto p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .contacto a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    .contacto a:hover {
-      text-decoration: underline;
-    }
-    
-    .contacto .redes-sociales {
-      display: flex;
-      margin-top: 2rem;
-    }
-    
-    .contacto .redes-sociales a {
-      margin: 0 1rem;
-    }
-    
-    .contacto .redes-sociales img {
-      width: 30px;
-      height: 30px;
-    }
-  
-  .container3 {
-    margin-top: 3%;
-      display: flex;
-      flex-direction: column; /* Apila los elementos verticalmente */
-      align-items: center; /* Alinea los elementos al inicio del contenedor */
-  }
-
-  .yo6 {
-    margin-top: -5%;
-    width: 40%;
-    align-items: center;
-  } 
-  
-  .cv {
-      max-width: 100%;
-      height: auto;
-      font-size: 30px;
-  }
-  
-  .cv-link {
-      align-items: center;
-      text-decoration: none;
-      color: #ffffff; /* Cambia el color del texto según tu diseño */
-      background-color: #007bff; /* Cambia el color de fondo según tu diseño */
-      padding: 10px 20px;
-      border-radius: 5px;
-      display: inline-block;
-  }
-  
-  .cv-link:hover {
-      background-color: #a4acb4; /* Color de fondo al pasar el ratón */
-  }
-  
-  @media (max-width: 600px) {
-      .container {
-          flex-direction: column; /* Cambia la dirección de los elementos a columna */
-          align-items: flex-start; /* Alinea los elementos al inicio */
-      }
-  
-      .cv {
-          margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
-          margin-bottom: 10px; /* Agrega un margen inferior para separar los elementos */
-      }
-  
-      .cv-link {
-          width: 100%; /* Hace que el enlace ocupe todo el ancho del contenedor */
-          text-align: center; /* Centra el texto del enlace */
-      }
-  }
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  color: #fff;
-  font-family: sans-serif;
-  padding: 20px; /* Añade padding para evitar que el contenido toque los bordes */
-}
-
-.contacto h1 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
-
-.contacto p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.contacto a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.contacto a:hover {
-  text-decoration: underline;
-}
-
-.contacto .redes-sociales {
-  display: flex;
-  margin-top: 2rem;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
-}
-
-.contacto .redes-sociales a {
-  margin: 0 1rem;
-}
-
-.contacto .redes-sociales img {
-  width: 30px;
-  height: 30px;
-}
-
-.display-4 {
-  color: #b8bbd5; /* Celeste */
-}
-
-p {
-  color: #ffffff; /* Blanco */
-}
-
-.form-label {
-  color: #ffffff; /* Blanco */
-}
-
-footer {
-  padding: 10px 0; /* Espaciado superior e inferior */
-}
-.navbar-brand {
-  text-align: center; /* Centra el texto */
-  font-family: monospace;
-}
-.nav-link {
-  color: #000; /* Cambia el color de los enlaces */
-}
-.nav-link:hover {
-  text-decoration: underline; /* Subraya los enlaces al pasar el mouse */
-}
-
-.icono {
-  margin-right: 10px; /* Espaciado a la derecha del icono */
-  color: #007bff; /* Cambia el color del icono (puedes usar cualquier color) */
-  font-size: 30px; /* Aumenta el tamaño del icono */
-}
-.icono:hover {
-  color: #0056b3; /* Cambia el color al pasar el mouse (puedes personalizar) */
-}
- 

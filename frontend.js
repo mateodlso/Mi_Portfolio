@@ -110,26 +110,36 @@ particlesJS("particles-js",{
     );
 
 // Validación del formulario y envío de datos
-document.getElementById("contactForm").addEventListener("submit", event => {
-    event.preventDefault();  // Evita el envío por defecto
-
-    const email = document.getElementById("email").value;
-    const name = document.getElementById("name").value;
-    const message = document.getElementById("message").value;
-
-    if (!email || !name || !message) {
-        alert("Por favor, completa todos los campos.");
-        return;
-    }
-
-    fetch("http://localhost:3000/send", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, message }),
-    })
-    .then(response => response.json())
-    .then(data => alert(data.success || data.error))
-    .catch(error => console.error("Error:", error));
-});
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+     event.preventDefault(); // Evita el envío por defecto del formulario
+ 
+     const email = document.getElementById("email").value;
+     const name = document.getElementById("name").value;
+     const message = document.getElementById("message").value;
+ 
+     // Validación básica
+     if (!email || !name || !message) {
+         alert("Por favor, completa todos los campos.");
+         return;
+     }
+ 
+     // Enviar datos al servidor
+     fetch("http://localhost:3000/send", {
+         method: "POST",
+         headers: {
+             "Content-Type": "application/json",
+         },
+         body: JSON.stringify({ name, email, message }),
+     })
+     .then(response => response.json())
+     .then(data => {
+         alert(data.success || data.error);
+         // Limpiar el formulario después de enviar
+         document.getElementById("contactForm").reset();
+     })
+     .catch(error => {
+         console.error("Error:", error);
+         alert("Hubo un problema al enviar el mensaje.");
+     });
+ });
+ 

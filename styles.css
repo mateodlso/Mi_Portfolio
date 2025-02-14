@@ -10,10 +10,14 @@
 }
 
 /* Estilos generales */
+html {
+  scroll-behavior: smooth; /* Scroll suave */
+}
 body, h1, h2, h3 {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 60px;
 }
 
 img, video {
@@ -22,15 +26,31 @@ img, video {
 }
 
 /* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--light-background);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 5px 20px;
+  transition: background-color 0.3s ease;
+}
+
+#header.scrolled {
+  background-color: var(--secondary-color);
+}
+
 #header a {
   text-decoration: none;
   color: var(--link-color);
-  font-weight: normal;  /* Asegúrate de que no haya negrita */
+  font-weight: normal;
 }
 
 #header a:hover {
   color: var(--link-hover-color);
-  font-weight: bold; /* Esto asegura que al pasar el ratón se haga en negrita */
+  font-weight: bold;
 }
 
 /* Sección de experiencia */
@@ -70,12 +90,15 @@ img, video {
   border: 1px solid #ff0000;
   border-radius: 5px;
   background-color: var(--light-background);
-  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
   flex: 1 1 200px;
 }
 
 .skills li:hover, .projects li:hover, .certificados li:hover {
-  background-color: var(--secondary-color);
+  transform: scale(1.05);
+  background-color: var(--primary-color);
+  color: #ffffff;
 }
 
 /* Enlaces y botones */
@@ -94,29 +117,14 @@ a:hover {
   background-color: var(--primary-color);
   padding: 10px 20px;
   border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-  background-color: var(--footer-background);
-  padding: 20px 0;
-  text-align: center;
-}
-
-footer .navbar {
-  padding: 0;
-}
-
-footer .nav-link {
-  color: #333;
-}
-
-footer .nav-link:hover {
-  color: var(--primary-color);
+  background-color: var(--link-hover-color);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
 }
 
 /* Íconos y redes sociales */
@@ -137,6 +145,7 @@ footer .nav-link:hover {
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
 }
 
 .social-links li:hover {
@@ -210,13 +219,15 @@ form .form-label {
 }
 
 form .form-control {
+  border: 2px solid #ddd;
+  padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
 }
 
 form .form-control:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(51, 122, 183, 0.5);
+  box-shadow: 0 0 10px rgba(51, 122, 183, 0.5);
 }
 
 button.btn {

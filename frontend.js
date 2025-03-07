@@ -151,3 +151,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
        header.classList.remove('scrolled');
      }
    });
+
+   window.addEventListener('load', () => {
+     // Animación de la foto de perfil
+     gsap.from("#foto-perfil", {
+         opacity: 0,
+         scale: 0.8,
+         duration: 1,
+         ease: "power2.out"
+     });
+});
